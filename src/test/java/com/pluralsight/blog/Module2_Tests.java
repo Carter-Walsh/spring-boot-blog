@@ -1,5 +1,6 @@
 package com.pluralsight.blog;
 
+import com.pluralsight.blog.controllers.BlogController;
 import com.pluralsight.blog.model.Post;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -44,7 +45,6 @@ public class Module2_Tests {
     @Autowired
     private BlogController blogController;
 
-
     @Autowired
     private PostRepository postRepository;
 
@@ -52,12 +52,10 @@ public class Module2_Tests {
 
     private Class c = null;
     private Method method = null;
-
     private List<Post> ALL_POSTS;
 
     @Before
     public void setup() {
-
 
         // Task 1
         String packageName = getClass().getPackage().getName();

@@ -1,5 +1,6 @@
 package com.pluralsight.blog;
 
+import com.pluralsight.blog.controllers.BlogController;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import com.pluralsight.blog.data.PostRepository;
